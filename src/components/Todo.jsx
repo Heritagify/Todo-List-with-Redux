@@ -11,7 +11,7 @@ const Todo = ({ todo }) => {
   };
 
   return (
-    <div className={`flex items-center justify-between p-2 border ${todo.completed ? 'bg-green-200' : 'bg-white'}`}>
+    <div className={`flex items-center gap-3 w-full text-emerald-900 hover:animate-bounce justify-between p-2 border ${todo.completed ? 'bg-green-200' : 'bg-white'}`}>
       <p>{todo.text}</p>
       <input type="checkbox" checked={todo.completed} onChange={handleToggle} />
     </div>

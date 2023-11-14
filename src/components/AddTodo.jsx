@@ -23,9 +23,9 @@ const AddTodo = () => {
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Add a new todo..."
-        className="p-2 border"
+        className="px-3 py-1 outline-none ml-2 rounded-full w-80"
       />
-      <button type="submit" className="ml-2 p-2 bg-blue-500 text-white">
+      <button type="submit" className="ml-2 p-2 px-3 text-sm bg-purple-900 rounded-lg text-white hover:skew-y-12">
         Add Todo
       </button>
     </form>

@@ -14,11 +14,11 @@ const TodoList = () => {
   };
 
   return (
-    <div className="mt-4 border-4">
+    <div className="mt-4 bg-cyan-800 p-2">
       {todo.map((todo) => (
-        <div key= {todo.id} className='flex items-center justify-between p-2 border'>
+        <div key= {todo.id} className='flex items-center justify-between p-2'>
         <Todo todo={todo} />
-        <button onClick={() => handleDelete(todo.id)} className="ml-2 p-2 bg-red-500 text-white">
+        <button onClick={() => handleDelete(todo.id)} className="ml-2 p-2 px-4 bg-red-600 rounded-2xl text-white text-sm">
             Delete
           </button>
       </div>
